@@ -1,0 +1,11 @@
+.dropdown {
+  @apply relative;
+
+  .dropdown-container {
+    @apply absolute z-50 mt-2 w-60  rounded-md shadow-lg origin-top-right right-0;
+
+    .dropdown-contents {
+      @apply rounded-md ring-1 ring-black ring-opacity-5 w-60  py-1 bg-white;
+    }
+  }
+}

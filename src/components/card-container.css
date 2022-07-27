@@ -1,0 +1,11 @@
+.card-container {
+  @apply flex gap-4 flex-wrap max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8;
+
+  .card {
+    @apply bg-slate-100 rounded-lg shadow p-8 max-w-sm hover:bg-slate-200;
+
+    .card-header {
+      @apply space-y-4 font-bold;
+    }
+  }
+}

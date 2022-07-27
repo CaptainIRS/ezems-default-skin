@@ -1,0 +1,23 @@
+.connected-account {
+  @apply pl-3 flex items-center justify-between;
+
+  .connected-account-container {
+    @apply flex items-center;
+
+    .provider-name {
+      @apply text-sm font-semibold text-gray-600;
+    }
+
+    .provider-icon {
+      @apply h-6 w-6 mr-2;
+    }
+
+    .provider-connect-status {
+      @apply text-xs text-gray-500;
+    }
+  }
+
+  .connect-error {
+    @apply text-sm font-semibold text-red-500 px-3 mt-2;
+  }
+}

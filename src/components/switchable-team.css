@@ -1,0 +1,5 @@
+.switchable-team {
+  .switchable-team-check-mark {
+    @apply mr-2 h-5 w-5 text-green-400;
+  }
+}

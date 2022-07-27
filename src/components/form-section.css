@@ -1,0 +1,27 @@
+.form-section {
+  @apply md:grid md:grid-cols-3 md:gap-6;
+
+  .form-section-body {
+    @apply mt-5 md:mt-0 md:col-span-2;
+
+    .form-section-content {
+      @apply px-4 py-5 bg-white sm:p-6 shadow;
+
+      &.with-actions {
+        @apply sm:rounded-tl-md sm:rounded-tr-md;
+      }
+
+      &.without-actions {
+        @apply sm:rounded-md;
+      }
+
+      .form-section-form {
+        @apply grid grid-cols-6 gap-6;
+      }
+    }
+
+    .form-section-actions {
+      @apply flex items-center justify-end px-4 py-3 bg-gray-50 text-right sm:px-6 shadow sm:rounded-bl-md sm:rounded-br-md;
+    }
+  }
+}

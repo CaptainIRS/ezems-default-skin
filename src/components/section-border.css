@@ -1,0 +1,7 @@
+.section-border {
+  @apply hidden sm:block py-8;
+
+  .section-border-line {
+    @apply border-t border-gray-200;
+  }
+}

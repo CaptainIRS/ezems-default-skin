@@ -1,0 +1,47 @@
+{
+  "name": "ezems-skin-default",
+  "version": "0.1.0",
+  "description": "The default skin for ezEMS",
+  "keywords": [
+    "cms",
+    "ui",
+    "skin"
+  ],
+  "homepage": "https://github.com/CaptainIRS/ezems-default-skin",
+  "bugs": {
+    "url": "https://github.com/CaptainIRS/ezems-default-skin/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "CaptainIRS",
+    "url": "https://captainirs.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CaptainIRS/ezems-default-skin.git"
+  },
+  "main": "./dist/app.css",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "postcss src/app.css -o dist/app.css",
+    "watch": "postcss src/app.css -o dist/app.css -w",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "cssnano": "^5.1.12",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0",
+    "postcss-import": "^14.1.0",
+    "prettier": "2.7.1",
+    "tailwindcss": "^3.0.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}

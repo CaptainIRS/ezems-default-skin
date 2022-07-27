@@ -1,0 +1,27 @@
+.banner {
+  &.banner-success {
+    @apply bg-indigo-500;
+  }
+  &.banner-danger {
+    @apply bg-red-700;
+  }
+  &.banner-info {
+    @apply bg-gray-500;
+  }
+
+  .banner-container {
+    @apply max-w-screen-xl mx-auto py-2 px-3 sm:px-6 lg:px-8 flex items-center justify-between flex-wrap;
+
+    .banner-message-container {
+      @apply w-0 flex-1 flex items-center min-w-0;
+
+      .banner-message-text {
+        @apply ml-3 font-medium text-sm text-white truncate;
+      }
+    }
+
+    .banner-button {
+      @apply shrink-0 sm:ml-3 -mr-1 flex p-2 rounded-md focus:outline-none sm:-mr-2 transition;
+    }
+  }
+}

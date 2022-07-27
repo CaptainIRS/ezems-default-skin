@@ -1,0 +1,12 @@
+.event-page {
+  @apply lg:flex lg:flex-row;
+  background-color: #fafafa;
+
+  .event-image {
+    @apply lg:w-2/5;
+  }
+
+  .tab-container {
+    @apply lg:w-3/5;
+  }
+}

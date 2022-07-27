@@ -1,0 +1,20 @@
+.auth-providers-divider {
+  @apply flex flex-row items-center justify-between py-4 text-gray-500;
+
+  .left,
+  .right {
+    @apply w-full mr-2;
+  }
+}
+
+.oauth-auth-providers {
+  @apply flex items-center justify-center;
+
+  .auth-provider-icon {
+    @apply h-6 w-6 mx-2;
+  }
+
+  .auth-provider-name {
+    @apply sr-only;
+  }
+}

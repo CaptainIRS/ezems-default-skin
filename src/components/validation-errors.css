@@ -1,0 +1,9 @@
+.validation-errors {
+  .validation-errors-header {
+    @apply font-medium text-red-600;
+  }
+
+  .validation-errors-list {
+    @apply mt-3 list-disc list-inside text-sm text-red-600;
+  }
+}

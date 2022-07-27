@@ -1,0 +1,161 @@
+.team-settings-page {
+  .team-settings-header {
+    @apply font-semibold text-xl text-gray-800 leading-tight;
+  }
+
+  .team-settings-content {
+    @apply max-w-7xl mx-auto py-10 sm:px-6 lg:px-8;
+
+    .team-text-input {
+      @apply col-span-6;
+    }
+
+    .team-form-section {
+      @apply mt-10 sm:mt-0;
+
+      .form-info-container {
+        @apply col-span-6;
+
+        .form-info-content {
+          @apply max-w-xl text-sm text-gray-600;
+        }
+      }
+
+      .team-input-group {
+        @apply col-span-6 sm:col-span-4;
+
+        .team-text-input {
+          @apply mt-1 block w-full;
+        }
+
+        .team-text-input-error {
+          @apply mt-2;
+        }
+      }
+
+      .team-roles-container {
+        @apply col-span-6 lg:col-span-4;
+      }
+
+      .pending-invitations-container {
+        @apply space-y-6;
+
+        .pending-invitation-item {
+          @apply flex items-center justify-between;
+
+          .pending-invitation-email {
+            @apply text-gray-600;
+          }
+
+          .invitation-cancel-container {
+            @apply flex items-center;
+
+            .invitation-cancel-button {
+              @apply cursor-pointer ml-6 text-sm text-red-500 focus:outline-none;
+            }
+          }
+        }
+      }
+
+      .team-members-container {
+        @apply space-y-6;
+
+        .team-member-item {
+          @apply flex items-center justify-between;
+
+          .team-member-info-container {
+            @apply flex items-center;
+
+            .team-member-image {
+              @apply w-8 h-8 rounded-full;
+            }
+
+            .team-member-name {
+              @apply ml-4;
+            }
+          }
+
+          .team-member-role-container {
+            @apply flex items-center;
+
+            .edit-member-role-button {
+              @apply ml-2 text-sm text-gray-400;
+
+              &.edit-member-role-button-editable {
+                @apply underline;
+              }
+            }
+          }
+
+          .team-member-delete-button {
+            @apply cursor-pointer ml-6 text-sm text-red-500;
+          }
+        }
+      }
+    }
+
+    .delete-team-button {
+      @apply mt-5;
+    }
+
+    .team-owner-container {
+      @apply col-span-6;
+    }
+
+    .team-owner-info-container {
+      @apply flex items-center mt-2;
+
+      .team-owner-image {
+        @apply w-12 h-12 rounded-full object-cover;
+      }
+
+      .team-owner-name {
+        @apply ml-4 leading-tight;
+
+        .team-owner-email {
+          @apply text-gray-700 text-sm;
+        }
+      }
+    }
+
+    .team-roles-list {
+      @apply relative z-0 mt-1 border border-gray-200 rounded-lg cursor-pointer;
+
+      .team-role-item {
+        @apply relative px-4 py-3 inline-flex w-full rounded-lg focus:z-10 focus:outline-none focus:border-blue-300 focus:ring focus:ring-blue-200;
+
+        &.team-role-item-not-first {
+          @apply border-t border-gray-200 rounded-t-none;
+        }
+
+        &.team-role-item-not-last {
+          @apply rounded-b-none;
+        }
+
+        &.team-role-item-inactive {
+          @apply opacity-50;
+        }
+
+        .role-name-container {
+          @apply flex items-center;
+
+          .role-name-text {
+            @apply text-sm text-gray-600;
+
+            &.role-name-text-active {
+              @apply font-semibold;
+            }
+          }
+
+          .active-role-check-mark {
+            @apply ml-2 h-5 w-5 text-green-400;
+          }
+        }
+
+        .role-description {
+          @apply mt-2 text-xs text-gray-600 text-left;
+        }
+      }
+    }
+  }
+}

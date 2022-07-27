@@ -1,0 +1,11 @@
+.action-section {
+  @apply md:grid md:grid-cols-3 md:gap-6;
+
+  .action-section-content-container {
+    @apply mt-5 md:mt-0 md:col-span-2;
+
+    .action-section-content {
+      @apply px-4 py-5 sm:p-6 bg-white shadow sm:rounded-lg;
+    }
+  }
+}

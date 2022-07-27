@@ -1,0 +1,103 @@
+.profile-page {
+  .profile-page-heading {
+    @apply font-semibold text-xl text-gray-800 leading-tight;
+  }
+
+  .profile-page-content {
+    @apply max-w-7xl mx-auto py-10 sm:px-6 lg:px-8;
+
+    .profile-input-group {
+      @apply col-span-6 sm:col-span-4;
+
+      .current-profile-photo {
+        @apply mt-2;
+      }
+
+      .new-profile-photo-preview {
+        @apply mt-2;
+
+        .new-profile-photo-preview-image {
+          @apply block rounded-full w-20 h-20 bg-cover bg-no-repeat bg-center;
+        }
+      }
+
+      .select-photo-button {
+        @apply mt-2 mr-2;
+      }
+
+      .remove-photo-button {
+        @apply mt-2;
+      }
+
+      .profile-text-input {
+        @apply mt-1 block w-full;
+      }
+
+      .profile-text-input-error {
+        @apply mt-2;
+      }
+
+      .email-unverified-warning {
+        @apply text-sm mt-2;
+
+        .verification-resend-link {
+          @apply underline text-sm text-gray-600 hover:text-gray-900;
+        }
+      }
+
+      .verification-resent-message {
+        @apply mt-2 font-medium text-sm text-green-600;
+      }
+    }
+
+    .current-status {
+      @apply text-lg font-medium text-gray-900;
+    }
+
+    .current-status-description {
+      @apply mt-3 max-w-xl text-sm text-gray-600;
+    }
+
+    .oauth-provider-container {
+      @apply mt-5 space-y-6;
+
+      .oauth-provider-actions {
+        @apply flex items-center space-x-6;
+
+        .use-avatar-as-photo-button {
+          @apply cursor-pointer ml-6 text-sm text-gray-500 focus:outline-none;
+        }
+      }
+    }
+
+    .two-factor-instructions {
+      @apply mt-4 max-w-xl text-sm text-gray-600 font-semibold;
+    }
+
+    .two-factor-qr-code {
+      @apply mt-4;
+    }
+
+    .two-factor-recovery-codes {
+      @apply grid gap-1 max-w-xl mt-4 px-4 py-4 font-mono text-sm bg-gray-100 rounded-lg;
+    }
+
+    .two-factor-otp-container {
+      @apply mt-4;
+
+      .two-factor-otp-input {
+        @apply block mt-1 w-1/2;
+      }
+    }
+
+    .two-factor-actions-container {
+      @apply mt-5;
+
+      .button,
+      .danger-button,
+      .secondary-button {
+        @apply mr-3;
+      }
+    }
+  }
+}

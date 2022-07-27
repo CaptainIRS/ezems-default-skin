@@ -1,0 +1,3 @@
+.action-message {
+  @apply text-sm text-gray-600 mr-3;
+}

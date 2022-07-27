@@ -1,0 +1,19 @@
+.section-title {
+  @apply md:col-span-1 flex justify-between;
+
+  .section-title-container {
+    @apply px-4 sm:px-0;
+
+    .section-title-text {
+      @apply text-lg font-medium text-gray-900;
+    }
+
+    .section-title-description {
+      @apply mt-1 text-sm text-gray-600;
+    }
+  }
+
+  .section-title-aside {
+    @apply px-4 sm:px-0;
+  }
+}

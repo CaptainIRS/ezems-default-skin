@@ -1,0 +1,75 @@
+.nav {
+  @apply bg-white border-b border-gray-100;
+
+  .primary {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16;
+
+    .links {
+      @apply flex;
+
+      .logo {
+        @apply shrink-0 flex items-center;
+
+        .application-mark {
+          @apply block h-9 w-auto;
+        }
+      }
+
+      .nav-links {
+        @apply hidden space-x-8 sm:-my-px sm:ml-10 sm:flex;
+      }
+    }
+
+    .dropdowns {
+      @apply hidden sm:flex sm:items-center sm:ml-6 ml-3 relative;
+
+      .nav-dropdown-trigger-button {
+        @apply flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition;
+
+        .nav-dropdown-trigger-image {
+          @apply h-8 w-8 rounded-full object-cover;
+        }
+      }
+    }
+
+    .nav-hamburger {
+      @apply -mr-2 flex items-center sm:hidden;
+
+      .hamburger-button {
+        @apply inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition;
+
+        .hamburger-button-image {
+          @apply h-6 w-6;
+
+          .hamburger-open {
+            @apply inline-flex;
+          }
+
+          .hamburger-closed {
+            @apply hidden;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-heading {
+    @apply block px-4 py-2 text-xs text-gray-400;
+  }
+
+  .nav-divider {
+    @apply border-t border-gray-100;
+  }
+}
+
+.responsive-nav {
+  @apply sm:hidden;
+
+  &.responsive-nav-open {
+    @apply block;
+  }
+
+  &.responsive-nav-closed {
+    @apply hidden;
+  }
+}

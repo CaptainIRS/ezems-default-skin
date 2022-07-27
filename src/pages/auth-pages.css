@@ -1,0 +1,59 @@
+.auth-header {
+  @apply mb-4 text-sm text-gray-600;
+}
+
+.auth-validation-errors {
+  @apply mb-4;
+}
+
+.auth-text-input {
+  @apply block mt-1 w-full;
+}
+
+.auth-action-button-container {
+  @apply flex items-center justify-end mt-4;
+
+  .two-factor-action-button {
+    @apply text-sm text-gray-600 hover:text-gray-900 underline cursor-pointer;
+  }
+}
+
+.auth-button {
+  @apply ml-4;
+}
+
+.auth-status {
+  @apply mb-4 font-medium text-sm text-green-600;
+}
+
+.auth-input-group {
+  @apply mt-4;
+}
+
+.terms-container {
+  @apply flex items-center;
+
+  .terms-text {
+    @apply ml-2;
+
+    .policy-links {
+      @apply underline text-sm text-gray-600 hover:text-gray-900;
+    }
+  }
+}
+
+.login-redirect-link {
+  @apply underline text-sm text-gray-600 hover:text-gray-900;
+}
+
+.forgot-password-link {
+  @apply underline text-sm text-gray-600 hover:text-gray-900;
+}
+
+.remember-me-label {
+  @apply flex items-center;
+
+  .remember-me-text {
+    @apply ml-2 text-sm text-gray-600;
+  }
+}

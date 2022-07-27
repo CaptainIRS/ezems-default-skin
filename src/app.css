@@ -1,0 +1,21 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "components/all";
+@import "pages/all";
+
+.mt-auto {
+  margin-top: unset !important;
+}
+
+.app {
+  @apply font-sans antialiased bg-white;
+
+  .body {
+    @apply min-h-screen bg-gray-100;
+
+    .header {
+      @apply max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 bg-white shadow;
+    }
+  }
+}
